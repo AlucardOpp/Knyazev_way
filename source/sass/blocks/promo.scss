@@ -1,0 +1,113 @@
+.promo {
+  background-image: url("../img/promo-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 201px;
+}
+
+.promo__wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+  min-height: 860px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.promo__title {
+  color: $white;
+  line-height: 80px;
+  letter-spacing: -1.11px;
+  max-width: 412px;
+  margin: 186px 58px 28px 0;
+}
+
+.promo__information {
+  color: $white;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 170%;
+  letter-spacing: -0.47px;
+  max-width: 376px;
+  margin: 0 94px 34px 0;
+}
+
+.promo__button {
+  position: relative;
+  width: 300px;
+  justify-content: start;
+  padding-left: 40px;
+  margin-right: 130px;
+  text-decoration: none;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-image: url("../img/arrow-down.svg");
+    right: 40px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .promo {
+    background-image: url("../img/promo-image-tablet.jpg");
+    margin-bottom: 80px;
+  }
+
+  .promo__wrapper {
+    min-width: 616px;
+    min-height: 344px;
+    align-items: center;
+  }
+
+  .promo__title {
+    max-width: 398px;
+    line-height: 45px;
+    margin: 60px 0 15px 0;
+  }
+
+  .promo__information {
+    margin: 0 0 15px 0;
+    max-width: 398px;
+    text-align: center;
+  }
+
+  .promo__button {
+    width: 210px;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .promo {
+    background-image: url("../img/promo-image-mobile.jpg");
+    background-size: 100% 235px;
+  }
+
+  .promo__wrapper {
+    min-width: 288px;
+    margin: 0 16px;
+  }
+
+  .promo__title {
+    max-width: 294px;
+    text-align: center;
+    margin: 81px 0 102px 0;
+    line-height: 36px;
+    min-height: 72px;
+  }
+
+  .promo__information {
+    color: $main-title-black;
+    max-width: 288px;
+    margin-bottom: 20px;
+    min-height: 108px;
+  }
+
+  .promo__button {
+    width: 248px;
+  }
+}

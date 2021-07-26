@@ -1,0 +1,39 @@
+.corporate-travel {
+  padding-left: 55px;
+
+  @media (max-width: 1620px) {
+    padding-left: 36px;
+  }
+
+  @media (max-width: 1322px) {
+    padding-left: 18px;
+  }
+}
+
+.corporate-travel__title {
+  margin-bottom: 20px;
+}
+
+.corporate-travel__information {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 170%;
+  color: $footer-link-grey;
+  margin: 0;
+}
+
+@media (max-width: $tablet-width) {
+  .corporate-travel {
+    border-top: 1px solid $footer-mark-grey;
+    padding: 30px 0 0 0;
+    grid-column: 1 / -1;
+  }
+
+  .corporate-travel__title {
+    text-align: center;
+  }
+
+  .corporate-travel__information {
+    text-align: center;
+  }
+}

@@ -1,0 +1,376 @@
+.prices {
+  margin-bottom: 110px;
+}
+
+.prices__wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (max-width: 1208px) {
+    margin: 0 20px 0 20px;
+  }
+}
+
+.prices__container {
+  order: 1;
+  margin-left: 64px;
+
+  @media (max-width: 1208px) {
+    margin-left: auto;
+  }
+}
+
+.prices__title {
+  margin: 112px 0 48px 0;
+  position: relative;
+  letter-spacing: 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 175px;
+    border-bottom: 3px solid #fe7865;
+    top: 104px;
+    left: 0;
+  }
+}
+
+.prices__description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 170%;
+  color: $main-title-black-7;
+  margin: 0 0 60px 0;
+  max-width: 306px;
+}
+
+.prices__contacts-us {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 34px;
+  color: $black;
+  margin: 0 0 13px 46px;
+}
+
+.prices__number {
+  margin: 0 0 0 46px;
+}
+
+.prices__tel {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: $classic-black;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/phone-hover.svg");
+    left: -49px;
+    top: -3px;
+  }
+}
+
+.prices__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  max-width: 800px;
+  flex-wrap: wrap;
+
+  @media (max-width: 1147px) {
+    max-width: 400px;
+  }
+}
+
+.prices__item {
+  box-sizing: border-box;
+  border: 1px solid $main-title-black-3;
+  width: 370px;
+  min-height: 672px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0 30px 30px 0;
+  border-radius: 6px;
+  background-color: $white;
+
+  &:hover {
+    border: 3px solid $red;
+  }
+
+  &:hover .prices__block {
+    color: $red;
+    margin: 39px 27px;
+  }
+
+  &:hover .prices__tariff-name {
+    line-height: 34px;
+    letter-spacing: 0;
+  }
+
+  &:hover .prices__service-list {
+    border-top-color: $red;
+    margin: 0 27px;
+  }
+
+  &:hover .prices__check {
+    fill: $black;
+    margin: 0 8px 0 -1px;
+  }
+
+  &:hover .prices__text {
+    margin: 0 48px 26px 27px;
+  }
+
+  &:hover .prices__button {
+    margin: auto 0 27px 0;
+  }
+}
+
+.prices__block {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 39px 29px 38px 29px;
+  justify-content: space-between;
+  min-width: 310px;
+  align-items: baseline;
+  color: $main-title-black-7;
+}
+
+.prices__tariff-name {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 38px;
+  letter-spacing: -1.27px;
+  margin: 0;
+  color: inherit;
+}
+
+.prices__price {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 34px;
+  color: inherit;
+  margin: 0;
+}
+
+.prices__text {
+  margin: 0 50px 26px 29px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: $main-title-black;
+}
+
+.prices__service-list {
+  list-style: none;
+  margin: 0 29px;
+  padding: 32px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border-top: 1px solid $main-title-black-3;
+}
+
+.prices__service {
+  display: flex;
+  align-items: flex-start;
+}
+
+.prices__check {
+  position: relative;
+  bottom: -5px;
+  margin: 0 12px 0 -5px;
+  fill: $red;
+  min-width: 22px;
+}
+
+.prices__advantage {
+  margin: 0 0 15px 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  max-width: 280px;
+  color: $main-title-black;
+
+  &--margin-6 {
+    margin-bottom: 5px;
+  }
+}
+
+.prices__button {
+  width: 310px;
+  margin: auto 0 29px 0;
+  align-self: center;
+}
+
+@media (max-width: $tablet-width) {
+  .prices {
+    margin-bottom: 80px;
+  }
+
+  .prices__wrapper {
+    flex-direction: column;
+    min-width: 726px;
+    margin: 0 21px;
+  }
+
+  .prices__container {
+    order: 0;
+    margin: 0 0 40px 0;
+    align-self: center;
+  }
+
+  .prices__title {
+    margin: 0 0 20px 0;
+    text-align: center;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .prices__description {
+    max-width: none;
+    text-align: center;
+    margin-bottom: 33px;
+  }
+
+  .prices__contacts-us {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .prices__contacts-us,
+  .prices__number {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .prices__tel {
+    text-decoration: underline;
+    color: $red;
+    font-size: 18px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .prices__list {
+    max-width: none;
+    margin: 0 50px;
+    justify-content: space-around;
+  }
+
+  .prices__item {
+    width: 288px;
+    min-height: 629px;
+    margin-right: 50px;
+    border-bottom: none;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+
+    &:hover .prices__block {
+      margin: 28px 17px 12px 17px;
+    }
+
+    &:hover .prices__service-list {
+      margin: 0 19px 0 17px;
+    }
+
+    &:hover .prices__text {
+      margin: 0 17px 8px 17px;
+    }
+
+    &:hover .prices__button {
+      margin: auto 0 -3px -3px;
+    }
+
+    &:hover .prices__tariff-name {
+      margin: 0 0 9px -5px;
+    }
+
+    &:hover .prices__price {
+      margin-left: -5px;
+    }
+  }
+
+  .prices__block {
+    min-width: 248px;
+    margin: 29px 19px 12px 19px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .prices__tariff-name {
+    font-size: 24px;
+    margin: 0 0 6px 0;
+  }
+
+  .prices__price {
+    margin-left: -11px;
+  }
+
+  .prices__text {
+    margin: 0 19px 8px 19px;
+    text-align: center;
+    width: 248px;
+  }
+
+  .prices__service-list {
+    padding-top: 22px;
+    margin: 0 19px;
+  }
+
+  .prices__advantage {
+    max-width: 218px;
+    margin-bottom: 10px;
+
+    &--margin-6 {
+      margin-bottom: 5px;
+    }
+  }
+
+  .prices__button {
+    width: 288px;
+    margin: auto 0 0 -1px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .prices {
+    margin-bottom: 20px;
+  }
+
+  .prices__wrapper {
+    min-width: 288px;
+    margin: 0 16px;
+  }
+
+  .prices__description {
+    margin-bottom: 20px;
+  }
+
+  .prices__list {
+    margin: 0;
+  }
+
+  .prices__item {
+    margin-right: 0;
+
+    @media (max-width: 617px) {
+      margin-right: 10px;
+    }
+  }
+}

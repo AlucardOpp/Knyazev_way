@@ -1,0 +1,175 @@
+.questions-form {
+  margin-bottom: 160px;
+}
+
+.questions-form__wrapper {
+  max-width: 1170px;
+  min-height: 455px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-image: url("../img/questions-form-background.jpg");
+  background-repeat: no-repeat;
+
+  @media (max-width: 1208px) {
+    margin: 0 20px 0 20px;
+  }
+}
+
+.questions-form__container {
+  width: 656px;
+  min-height: 315px;
+  margin-left: auto;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  box-shadow: 0 4px 30px $questions-form-shadow;
+  background-color: $white;
+}
+
+.questions-form__input-container {
+  position: relative;
+
+  &--error {
+    &::before {
+      content: "Данные не верны";
+      position: absolute;
+      width: 100%;
+      height: 16px;
+      color: $red;
+      font-weight: 400px;
+      font-size: 12px;
+      line-height: 15px;
+      top: -16px;
+    }
+  }
+}
+
+.questions-form__template {
+  position: absolute;
+  left: 15px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: $toggle-menu-black;
+}
+
+.questions-form__asterisk {
+  font-family: "Proxima Nova", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 21px;
+  color: $red;
+  position: relative;
+  top: -8px;
+}
+
+.questions-form__title {
+  font-size: 25px;
+  line-height: 32px;
+  color: $black;
+  margin: 50px 0 11px 0;
+}
+
+.questions-form__information {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: $black;
+  margin: 0 0 24px 0;
+}
+
+.questions-form__inputs {
+  margin: 0 0 25px 0;
+  border: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.questions-form__input {
+  width: 269px;
+  margin-right: 19px;
+
+  &--email {
+    margin-right: 0;
+  }
+}
+
+.questions-form__button {
+  width: 176px;
+  height: 50px;
+}
+
+@media (max-width: $tablet-width) {
+  .questions-form {
+    margin-bottom: 80px;
+    background-image: url("../img/questions-form-background-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .questions-form__wrapper {
+    background-image: none;
+  }
+
+  .questions-form__container {
+    width: 658px;
+    height: 311px;
+    margin: 0 auto;
+  }
+
+  .questions-form__button {
+    width: 250px;
+  }
+
+  .questions-form__input {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .questions-form {
+    background-image: none;
+    background-color: $grey;
+  }
+
+  .questions-form__wrapper {
+    min-height: auto;
+    min-width: 288px;
+    max-width: auto;
+    margin: 0 16px;
+  }
+
+  .questions-form__container {
+    background-color: inherit;
+    box-shadow: none;
+    width: 100%;
+    height: 100%;
+  }
+
+  .questions-form__title,
+  .questions-form__information {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .questions-form__inputs {
+    width: 100%;
+    margin: 0;
+    flex-direction: column;
+  }
+
+  .questions-form__input {
+    margin: 0 0 20px 0;
+    width: 100%;
+  }
+
+  .questions-form__button {
+    margin-bottom: 50px;
+    width: 100%;
+  }
+}
