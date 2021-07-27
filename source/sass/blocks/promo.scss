@@ -2,7 +2,12 @@
   background-image: url("../img/promo-image.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: $promo-background-blue;
   margin-bottom: 201px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/promo-image@2x.jpg");
+  }
 }
 
 .promo__wrapper {
@@ -55,6 +60,10 @@
   .promo {
     background-image: url("../img/promo-image-tablet.jpg");
     margin-bottom: 80px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/promo-image-tablet@2x.jpg");
+    }
   }
 
   .promo__wrapper {
@@ -67,10 +76,11 @@
     max-width: 398px;
     line-height: 45px;
     margin: 60px 0 15px 0;
+    letter-spacing: 0;
   }
 
   .promo__information {
-    margin: 0 0 15px 0;
+    margin: 0 0 10px 0;
     max-width: 398px;
     text-align: center;
   }
@@ -85,6 +95,12 @@
   .promo {
     background-image: url("../img/promo-image-mobile.jpg");
     background-size: 100% 235px;
+    margin-bottom: 76px;
+    background-color: transparent;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/promo-image-mobile@2x.jpg");
+    }
   }
 
   .promo__wrapper {
@@ -95,7 +111,7 @@
   .promo__title {
     max-width: 294px;
     text-align: center;
-    margin: 81px 0 102px 0;
+    margin: 82px -5px 101px 0;
     line-height: 36px;
     min-height: 72px;
   }

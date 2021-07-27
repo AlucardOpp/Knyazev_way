@@ -4,7 +4,6 @@
   line-height: 17px;
   color: $toggle-menu-black;
   height: 50px;
-  padding: 0;
   box-sizing: border-box;
   border: 1px solid $footer-mark-grey;
   font-family: inherit;
@@ -17,11 +16,11 @@
   }
 
   &--tel {
-    padding: 0 15px 0 47px;
+    padding: 16px 15px 15px 50px;
   }
 
   &--email {
-    padding: 0 15px;
+    padding: 16px 15px 15px 15px;
   }
 
   &--error {

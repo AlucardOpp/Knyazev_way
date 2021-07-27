@@ -81,6 +81,8 @@
   text-decoration: none;
   background-repeat: no-repeat;
   position: relative;
+  background-color: $places-of-visit-background-blue;
+  background-size: contain;
 
   &::before {
     position: absolute;
@@ -129,22 +131,42 @@
 
   &--greece {
     background-image: url("../img/places-of-visit-greece.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/places-of-visit-greece@2x.jpg");
+    }
   }
 
   &--albania {
     background-image: url("../img/places-of-visit-albania.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/places-of-visit-albania@2x.jpg");
+    }
   }
 
   &--macedonia {
     background-image: url("../img/places-of-visit-macedonia.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/places-of-visit-macedonia@2x.jpg");
+    }
   }
 
   &--montenegro {
     background-image: url("../img/places-of-visit-montenegro.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/places-of-visit-montenegro@2x.jpg");
+    }
   }
 
   &--croatia {
     background-image: url("../img/places-of-visit-croatia.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/places-of-visit-croatia@2x.jpg");
+    }
   }
 }
 
@@ -165,7 +187,7 @@
 
 @media (max-width: $tablet-width) {
   .places-of-visit {
-    margin-bottom: 57px;
+    margin-bottom: 56px;
   }
 
   .places-of-visit__wrapper {
@@ -179,7 +201,7 @@
 
   .places-of-visit__title {
     line-height: 45px;
-    margin-bottom: 20px;
+    margin-bottom: 22px;
     text-align: center;
 
     &::after {
@@ -188,12 +210,13 @@
   }
 
   .places-of-visit__information {
-    margin-bottom: 40px;
+    margin-bottom: 38px;
     text-align: center;
   }
 
   .places-of-visit__list {
     justify-content: space-around;
+    margin: 0 -20px;
   }
 
   .places-of-visit__item {
@@ -219,22 +242,42 @@
 
     &--greece {
       background-image: url("../img/places-of-visit-greece-tablet.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/places-of-visit-greece-tablet@2x.jpg");
+      }
     }
 
     &--albania {
       background-image: url("../img/places-of-visit-albania-tablet.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/places-of-visit-albania-tablet@2x.jpg");
+      }
     }
 
     &--macedonia {
       background-image: url("../img/places-of-visit-macedonia-tablet.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/places-of-visit-macedonia-tablet@2x.jpg");
+      }
     }
 
     &--montenegro {
       background-image: url("../img/places-of-visit-montenegro-tablet.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/places-of-visit-montenegro-tablet@2x.jpg");
+      }
     }
 
     &--croatia {
       background-image: url("../img/places-of-visit-croatia-tablet.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/places-of-visit-croatia-tablet@2x.jpg");
+      }
     }
   }
 }
@@ -244,13 +287,21 @@
     margin-bottom: 5px;
   }
 
+  .places-of-visit__title {
+    margin-bottom: 16px;
+  }
+
+  .places-of-visit__list {
+    margin: 0;
+  }
+
   .places-of-visit__wrapper {
     min-width: 288px;
     margin: 0 16px;
   }
 
   .places-of-visit__information {
-    margin-bottom: 20px;
+    margin-bottom: 19px;
     min-height: 84px;
   }
 
@@ -264,22 +315,42 @@
 
     &--greece {
       background-image: url("../img/places-of-visit-greece-mobile.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/places-of-visit-greece-mobile@2x.jpg");
+      }
     }
 
     &--albania {
       background-image: url("../img/places-of-visit-albania-mobile.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/places-of-visit-albania-mobile@2x.jpg");
+      }
     }
 
     &--macedonia {
       background-image: url("../img/places-of-visit-macedonia-mobile.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/places-of-visit-macedonia-mobile@2x.jpg");
+      }
     }
 
     &--montenegro {
       background-image: url("../img/places-of-visit-montenegro-mobile.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/places-of-visit-montenegro-mobile@2x.jpg");
+      }
     }
 
     &--croatia {
       background-image: url("../img/places-of-visit-croatia-mobile.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/places-of-visit-croatia-mobile@2x.jpg");
+      }
     }
   }
 }

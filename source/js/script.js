@@ -10,7 +10,7 @@ const pageHeaderContainer = document.querySelector('.page-header__container');
 const mainNavList = document.querySelector('.main-nav__list');
 const mainNavToggle = document.querySelector('.main-nav__toggle');
 const placesOfVisitLinks = document.querySelectorAll('.places-of-visit__link-block')
-const tabTriggers = document.querySelectorAll('.countries__tab');
+const tabTriggers = document.querySelectorAll('.countries__button-tab');
 const tabContents = document.querySelectorAll('.countries__item');
 const tabButtons = document.querySelectorAll('.countries__button');
 const overlay = document.querySelector('.overlay');
@@ -82,13 +82,13 @@ mainNavToggle.addEventListener('click', () => {
 
 const onTabLinkClick = (evt) => {
   const id = evt.target.getAttribute('data-tab');
-  const tab = document.querySelector('.countries__tab[data-tab="' + id + '"]');
+  const tab = document.querySelector('.countries__button-tab[data-tab="' + id + '"]');
   const content = document.querySelector('.countries__item[data-tab="' + id + '"]');
-  const showTrigger = document.querySelector('.countries__tab--show');
+  const showTrigger = document.querySelector('.countries__button-tab--show');
   const showContent = document.querySelector('.countries__item--show');
 
-  showTrigger.classList.remove('countries__tab--show');
-  tab.classList.add('countries__tab--show');
+  showTrigger.classList.remove('countries__button-tab--show');
+  tab.classList.add('countries__button-tab--show');
 
   showContent.classList.remove('countries__item--show');
   content.classList.add('countries__item--show');
@@ -350,4 +350,14 @@ questionsFormContainer.addEventListener('submit', (evt) => {
       localStorage.setItem('email', questionsFormInputEmail.value);
     }
   }
+});
+
+// Плавный скролл по клику на якорь
+
+$('a[href*="#"]').on('click', function(evt) {
+  evt.preventDefault();
+  const anchor = $(this).attr('href');
+  $('html, body').stop().animate({
+    scrollTop: $(anchor).offset().top - 60
+  }, 800);
 });

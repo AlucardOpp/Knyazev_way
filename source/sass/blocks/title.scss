@@ -18,6 +18,8 @@
 
 @media (max-width: $tablet-width) {
   .title {
+    letter-spacing: 0;
+
     &--main {
       font-size: 30px;
       line-height: 150%;

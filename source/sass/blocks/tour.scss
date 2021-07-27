@@ -16,10 +16,16 @@
   }
 }
 
-.tour__image {
+.tour__picture {
   width: auto;
   max-width: 338px;
+  height: 444px;
   object-fit: cover;
+}
+
+.tour__image {
+  width: 100%;
+  height: 100%;
 }
 
 .tour__form {
@@ -121,22 +127,38 @@
   .tour {
     width: 320px;
     min-height: 568px;
+
+    &--show {
+      background-color: $white;
+    }
   }
 
   .tour__title {
-    margin: 100px 0 50px 0;
+    margin: 100px 0 51px 0;
   }
 
   .tour__close {
-    right: 12px;
+    right: 18px;
+    top: 18px;
+
+    &::before,
+    &::after {
+      width: 30px;
+      left: -3px;
+    }
   }
 
-  .tour__image {
+  .tour__picture {
     display: none;
   }
 
-  .tour__button {
+  .tour__button,
+  .tour__input {
     width: 288px;
+  }
+
+  .tour__input {
+    border: 1px solid $main-title-black-3;
   }
 }
 

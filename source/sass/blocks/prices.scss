@@ -359,7 +359,7 @@
   }
 
   .prices__description {
-    margin-bottom: 20px;
+    margin-bottom: 18px;
   }
 
   .prices__list {
@@ -368,9 +368,5 @@
 
   .prices__item {
     margin-right: 0;
-
-    @media (max-width: 617px) {
-      margin-right: 10px;
-    }
   }
 }

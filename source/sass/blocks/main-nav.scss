@@ -144,3 +144,23 @@
     }
   }
 }
+
+@media (max-width: $mobile-width) {
+  .main-nav__toggle {
+    width: 50px;
+
+    &::before {
+      left: 14px;
+    }
+
+    &--opened {
+      &::before {
+        left: 11px;
+      }
+
+      &::after {
+        left: 11px;
+      }
+    }
+  }
+}

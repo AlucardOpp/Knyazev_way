@@ -46,7 +46,6 @@
 @media (max-width: $tablet-width) {
   .page-header__wrapper {
     min-height: 50px;
-    min-width: 768px;
     margin: 0;
     position: relative;
 
@@ -81,13 +80,13 @@
 }
 
 @media (max-width: $mobile-width) {
-  .page-header__wrapper {
-    min-width: 320px;
-  }
-
   .page-header__container {
     &--opened {
       width: 100%;
     }
+  }
+
+  .page-header__logo {
+    margin: 18px 0 0 16px;
   }
 }

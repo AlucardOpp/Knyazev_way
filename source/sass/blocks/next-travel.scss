@@ -3,12 +3,12 @@
 }
 
 .next-travel__title {
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 .next-travel__travel-city {
   display: grid;
-  grid-template-columns: repeat(3, 129px);
+  grid-template-columns: repeat(3, 128px);
 }
 
 .next-travel__travels {
@@ -19,30 +19,28 @@
 
 .next-travel__travel {
   margin-bottom: 10px;
+  color: $footer-link-grey;
+  font-size: 14px;
+  line-height: 17px;
 
   &:last-child {
     margin-bottom: 0;
   }
 }
 
-.next-travel__link {
-  text-decoration: none;
-  color: $footer-link-grey;
-  font-size: 14px;
-  line-height: 17px;
-}
-
 @media (max-width: $tablet-width) {
   .next-travel__travel-city {
     grid-template-columns: repeat(3, 1fr);
+    margin-right: 20px;
   }
 }
 
 @media (max-width: $mobile-width) {
   .next-travel {
-    padding-bottom: 10px;
+    padding-bottom: 9px;
     border-right: 0;
     border-bottom: 1px solid $footer-mark-grey;
+    margin-bottom: 30px;
   }
 
   .next-travel__title {
@@ -53,12 +51,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin: 0 -10px;
   }
 
   .next-travel__travels {
     padding-right: 0;
     width: 135px;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 19px;
   }
 }
