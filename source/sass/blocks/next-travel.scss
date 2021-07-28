@@ -29,6 +29,10 @@
 }
 
 @media (max-width: $tablet-width) {
+  .next-travel {
+    margin-bottom: 28px;
+  }
+
   .next-travel__travel-city {
     grid-template-columns: repeat(3, 1fr);
     margin-right: 20px;

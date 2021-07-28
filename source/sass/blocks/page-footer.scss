@@ -31,7 +31,6 @@
     margin: 0 21px;
     grid-template-columns: 6fr 5fr;
     grid-template-rows: repeat(2, min-content);
-    row-gap: 28px;
   }
 }
 
@@ -47,6 +46,5 @@
     flex-wrap: wrap;
     min-width: 288px;
     margin: 0 16px;
-    row-gap: 0;
   }
 }
